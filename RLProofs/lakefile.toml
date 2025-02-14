@@ -1,0 +1,20 @@
+name = "RLProofs"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["RLProofs"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "RLProofs"
+
+[[lean_exe]]
+name = "RLProofs"
+root = "Main"
+srcDir = "scripts"
