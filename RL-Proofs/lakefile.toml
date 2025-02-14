@@ -1,0 +1,10 @@
+name = "RL-Proofs"
+version = "0.1.0"
+defaultTargets = ["rl-proofs"]
+
+[[lean_lib]]
+name = "RLProofs"
+
+[[lean_exe]]
+name = "rl-proofs"
+root = "Main"
