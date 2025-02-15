@@ -1,0 +1,3 @@
+[submodule "extenral/coq-of-pytyhon"]
+	path = extenral/coq-of-pytyhon
+	url = https://github.com/formal-land/coq-of-python.git

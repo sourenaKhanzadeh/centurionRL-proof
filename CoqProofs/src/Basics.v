@@ -1,9 +1,30 @@
-(* Basics.v - First Coq Proof *)
+Inductive day : Type :=
+| monday
+| tuesday
+| wednesday
+| thursday
+| friday
+| saturday | sunday.
 
-Require Import Nat.
 
-Theorem add_comm : forall x y : nat, x + y = y + x.
+Definition next_weekday (d : day) : day :=
+  match d with
+  | monday => tuesday
+  | tuesday => wednesday
+  | wednesday => thursday
+  | thursday => friday
+  | friday => monday
+  | saturday => sunday
+  | sunday => monday
+  end.
+
+Example test_next_weekday :
+  (next_weekday (next_weekday monday)) = wednesday.
+
 Proof.
-  intros.
-  apply Nat.add_comm.
+  simpl.
+  reflexivity.
 Qed.
+
+
+
