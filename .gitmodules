@@ -1,7 +1,0 @@
-[submodule "external/coq-of-python"]
-	path = external/coq-of-python
-	url = https://github.com/formal-land/coq-of-python.git
-
-[submodule "external/CenturionRL"]
-	path = external/CenturionRL
-	url = https://github.com/your-repo/CenturionRL.git
